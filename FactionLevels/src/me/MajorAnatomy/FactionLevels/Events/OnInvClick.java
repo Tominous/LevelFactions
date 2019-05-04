@@ -37,7 +37,7 @@ public class OnInvClick implements Listener {
 		if(inv.equals(FactionLevels.invs.get(p.getUniqueId()))){
 			if(e.getSlot() == 1){
 				//on invite click
-				/*if(!MPlayer.get(p).hasFaction()){
+				if(!MPlayer.get(p).hasFaction()){
 					p.closeInventory();
 					p.sendMessage(ChatColor.DARK_RED + "Error: " + ChatColor.RED + "You need a faction for this!");
 					e.setCancelled(true);
@@ -47,11 +47,11 @@ public class OnInvClick implements Listener {
 					p.closeInventory();
 					e.setCancelled(true);
 				}
-				*/
+				
 				e.setCancelled(true);
 				p.closeInventory();
 				p.sendMessage(ChatColor.DARK_RED + "Coming soon!");
-				/*
+				
 				int i = 0;
 				for(Player p1 : getServer().getOnlinePlayers()){
 					for(int w = 0; i - 54 == 0; w++){
@@ -71,7 +71,7 @@ public class OnInvClick implements Listener {
 					}
 					}
 				p.openInventory(peps);
-				*/
+				
 				}
 			}
 		if(inv.equals(peps)){
